@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+  margin-bottom: 94px;
+  background: url('../img/header-photo.png') no-repeat #000;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 39px;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include transition(0.3s, all);
+
+    &:hover {
+      color: $red-link-color;
+    }
+  }
+
+  &__btn {
+    font-weight: bold;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 625px;
+    text-align: center;
+  }
+
+  &__text {
+    width: 60%;
+    margin-bottom: 98px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $light-font-color;
+    font-size: 52px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+
+  &__link {
+    padding: 12px 19px;
+  }
+}
+
+.sign-up {
+  padding: 8px 18px;
+  margin-left: 16px;
+  border: 2px solid;
+  border-radius: 20px;
+  @include transition(0.3s, all);
+
+  &:hover {
+    @extend .white-link:hover;
+  }
+}
+
+.log-in{
+  @include transition(0.3s, all);
+
+  &:hover {
+    color: $red-link-color;
+  }
+}
