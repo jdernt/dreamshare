@@ -71,6 +71,7 @@ body {
 
 .descr {
   font-family: $descr-font;
+  text-align: center;
 }
 
 .list {
@@ -89,4 +90,5 @@ input[type=search] {
 @import 'activity';
 @import 'search';
 @import 'footer';
+@import 'media';
 
