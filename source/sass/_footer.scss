@@ -26,7 +26,6 @@
   }
 
   &__item {
-
     &:not(:first-child) {
       color: #666666;
       font-family: $descr-font;
@@ -35,6 +34,10 @@
     &:not(:last-child) {
       margin-bottom: 7px;
     }
+  }
+
+  .title {
+    text-align: left;
   }
 
   &__section {
